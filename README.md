@@ -17,12 +17,16 @@ Work through all these exercises. You edit this file with your answers for these
 
 ### Exercise 2.2
 * What value is returned if you check the machine’s balance after it has printed a ticket?
+	-->The balance was 0 after setting the price to 500 and inserting 500 into the machine before printing the ticket.
 
 ### Exercise 2.3
 * Experiment with inserting different amounts of money before printing tickets.
 	* Do you notice anything strange about the machine’s behavior?
+	-->Once I added enough money into the TicketMachine it would always print a ticket, regardless of the current balance. The balance would always drop down to 0 regardless of how much more money was put into the TicketMachine and no change was given.
 	* What happens if you insert too much money into the machine – do you receive any refund?
+	-->It would always take all money inserted and give back nothing.
 	* What happens if you do not insert enough and then try to print a ticket?
+	-->It still prints a ticket and increases the tally for the TicketNumber section.
 
 ### Exercise 2.4
 * Try to obtain a good understanding of a ticket machine’s behavior by interacting with it on the object bench before we start looking at how the `TicketMachine` class is implemented in the next section.
@@ -31,9 +35,20 @@ Work through all these exercises. You edit this file with your answers for these
 * Create another ticket machine for tickets of a different price.
 	* Buy a ticket from that machine.
 	* Does the printed ticket look different?
+	-->Technically yes, the price and total on the ticket have changed. Other than that, the ticket itself seems to be the same.
 
 ### Exercise 2.6
 * Write out what you think the outer wrappers of the `Student` and `LabClass` classes might look like – do not worry about the inner part.
+
+--> public class Student
+		{
+
+		}
+
+--> public class LabClass
+		{
+
+		}
 
 ### Exercise 2.7
 Does it matter whether we write<br>
@@ -41,6 +56,8 @@ Does it matter whether we write<br>
 or<br>
 `class public TicketMachine`<br>
 in the outer wrapper of a class?
+
+--> Yes, writing 'class public TicketMachine' will not run.
 
 * Edit the source of the `TicketMachine` class to make the change and then close the editor window.
 	* Do you notice a change in the class diagram?
